@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 376px){
+    /* for mobile view */
+    .content{
+        width: 340px;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: left;
+        background-color: hsl(0, 0%, 100%);
+        margin: 20px;
+    }
+
+    .image1{
+        display: none;
+    }
+
+    .image2 {
+        width: 340px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 376px){
+    /* for desktop view */
+    .content{
+        width: 600px;
+        height: 450px;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: left;
+        display: flex;
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+    .cont-image .product-description {
+        width: 50%;
+    }
+
+    .image1 {
+        width: 280px;
+        height: 450px;
+    }
+
+    .image2{
+        display: none;
+    }
+}
+
+.text{
+    padding: 30px;
+}
+
+#perfume{
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: gray;    
+}
+
+#texto-resaltado{
+    text-transform: capitalize;
+    font-family: "Fraunces", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+    line-height:35px;    
+}
+
+#description{
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    font-size: 14px;
+    line-height:22px;
+}
+
+#actual-price{
+    font-family: "Fraunces", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+#old-price{
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 20px;
+    font-size: 14px;
+    text-decoration: line-through;
+    vertical-align: super;
+}
+
+#boton{
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    height: 40px;
+}
+
+#boton img{
+    padding-right: 8px;
+}
+
+#cont-btn{
+    padding-top: 35px;
+}
+
